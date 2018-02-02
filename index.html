@@ -12,55 +12,120 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <!-- fullpage CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" integrity="sha256-bwgO9MoPVvotukQtJ5uNfYOP7mNouND7Cbhd+MJvZX0=" crossorigin="anonymous" />
+
+    <!-- Font Awesome CSS -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
     <title>Dishant Kaushik</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animated fadeInDown">
-      <a class="navbar-brand animated fadeInUp" href="#" style="animation-delay: 1s">Dishant Kaushik</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Awards and Achievements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Extracurricular</a>
-          </li>
-        </ul>
-        <span class="navbar-text animated fadeInDown" style="animation-delay: 1s">
-          Software Engineering graduate seeking an internship in summer ‘18
-        </span>
+    <style>
+    .profile{
+      width: 90%;
+      margin: auto;    
+      display: block;
+      text-align: center;
+    }
+
+    .links{
+      width:70%;
+      text-align: center;
+      margin: 1px auto;
+      padding-top: 10%;
+    }
+    .links i{
+      width: 40px;
+      font-size: 20px;
+    }
+
+    .about-right{
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1025px) {
+      .about-right{
+        margin-top: 20%;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+      .about-left{
+        margin-top:15%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark animated fadeInDown">
+    <a class="navbar-brand animated fadeInUp" href="#" style="animation-delay: 1s">Dishant Kaushik</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" id="menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#awards">Awards and Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#extra">Extracurricular</a>
+        </li>
+      </ul>
+      <span class="navbar-text animated fadeInDown" style="animation-delay: 1s">
+        Software Engineering graduate seeking an internship in summer ‘18
+      </span>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row" style="padding-top: 5%;" id="about">
+      <div class="col-md-3 about-left">
+        <img src="images/profile_photo.jpg" alt="" class="profile rounded-circle">
+        <div class="links">
+          <i class="fas fa-envelope"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
       </div>
-    </nav>
-    <section>
-    </section>
-    <footer></footer>
+      <div class="col-md-9 about-right ">
+        <h1 class="title">Hi I'm Dishant</h1>
+        <p>Thank you for visiting my website, here you will find out all the information you need about me. Feel free to contact me.</p>
+        <i class="fas fa-phone"></i>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-  </html>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js" integrity="sha256-jwgjxc4j6/dE2aVSFNmEYv4W7+PEL4VChy404By79Is=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+          // menu: '#menu',
+          // navigation: true,
+          // navigationPosition: 'right',
+          sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000', 'green', 'yellow'],
+        });
+    })
+  </script>
+</body>
+</html>
