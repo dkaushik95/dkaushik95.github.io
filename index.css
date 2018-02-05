@@ -1,0 +1,90 @@
+@media screen and (max-width: 605px) {
+	#about{
+		margin-top: 56px;
+		height:100vh;
+	}
+
+	#about .right{
+		margin-top: -80px;
+	}
+
+}
+
+@media screen and (min-width: 1000px){
+	#about .left{
+		margin-top: 8%;
+	}
+
+	#about .right{
+		margin-top: 8%;
+		padding: 10%;
+	}
+	#about .right p{
+		font-size: 1.5em;
+	}
+	.card{
+		width: 50%;
+		margin: 5px auto;
+	}
+}
+
+.card img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.card img:hover{
+	-moz-transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
+}
+.card{
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in-out;
+	-webkit-box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.1);
+	text-align: center;
+	margin-top: 20px;
+}
+
+.card:hover{
+	-webkit-box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 61px -11px rgba(0,0,0,0.4);
+}
+
+.profile{
+	width: 50%;
+	margin: 1px auto;    
+	display: block;
+	text-align: center;
+}
+/*.row{
+	height:100vh;
+}*/
+#about{
+	text-align: center;
+	margin-top: 60px;
+	height:100vh;
+}
+.links{
+	width:70%;
+	text-align: center;
+	margin: 1px auto;
+	padding-top: 10%;
+}
+.links i{
+	width: 40px;
+	font-size: 20px;
+}
+
+.links a{
+	transition: color 0.2s ease-in-out;
+	color:black;
+}
+.links a:hover{
+	color:grey;
+}
+
