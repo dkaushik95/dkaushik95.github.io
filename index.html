@@ -61,6 +61,7 @@
   <div class="container-fluid">
     <!-- About -->
     <div class="row" id="about">
+      <div id="particles-js"></div>
       <div class="col-lg-6 left col-centered">
         <img src="images/profile_photo.jpg" alt="" class="profile rounded-circle animated fadeIn" style="animation-delay: 1s;">
         <div class="links">
@@ -395,7 +396,72 @@
     </div>
     <!-- Skills -->
     <h1 class="animated fadeIn wow section-heading" id="skills">Skills</h1>
-    <div class="row"></div>
+    <div class="row">
+      <div class="col-lg-3 animated zoomInDown wow">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active"><b>Areas of Intrests</b></li>
+          <li class="list-group-item">Full Stack Web Development</li>
+          <li class="list-group-item"><i class="fas fa-mobile-alt"></i> Mobile Development</li>
+          <li class="list-group-item">Machine Learning</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 animated zoomInDown wow">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active">Programming Languages</li>
+          <li class="list-group-item">Ruby</li>
+          <li class="list-group-item"><i class="fab fa-python"></i>
+
+          Python</li>
+          <li class="list-group-item">Java</li>
+          <li class="list-group-item">MATLAB</li>
+          <li class="list-group-item">C#</li>
+          <li class="list-group-item"><i class="fas fa-terminal"></i>
+
+          Shell Scripting</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 animated zoomInDown wow">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active"><i class="fab fa-internet-explorer"></i>
+          Web Development</li>
+          <li class="list-group-item"><i class="fab fa-html5"></i>
+
+          HTML</li>
+          <li class="list-group-item"><i class="fab fa-css3-alt"></i>
+
+          CSS</li>
+          <li class="list-group-item">Ruby on Rails</li>
+          <li class="list-group-item"><i class="fab fa-react"></i>
+
+          ReactJS</li>
+          <li class="list-group-item">Handlebars</li>
+          <li class="list-group-item"><i class="fab fa-microsoft"></i>
+
+          ASP.NET</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 animated zoomInDown wow">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active"><i class="fas fa-database"></i>
+          Databases</li>
+          <li class="list-group-item">MySQL</li>
+          <li class="list-group-item">PostreSQL</li>
+          <li class="list-group-item">SQLite</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 animated zoomInDown wow">     
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active">Tools I love</li>
+          <li class="list-group-item">Sublime Text</li>
+          <li class="list-group-item">IntelliJ</li>
+          <li class="list-group-item">Adobe Creative Suite</li>
+          <li class="list-group-item">Linux</li>
+          <li class="list-group-item">Git</li>
+          <li class="list-group-item">Trello</li>
+          <li class="list-group-item">Slack</li>
+        </ul>
+      </div>
+    </div>
     <!-- Awards and Achievements -->
     <h1 class="animated fadeIn wow section-heading" id="awards">Awards & Achievements</h1>
     <div class="row"></div>
@@ -416,11 +482,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Wow JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     new WOW().init();
+    particlesJS.load('particles-js', 'css/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
   </script>
   <script>
-    
+
     $(function(){
       var header = $('nav');
       $(window).scroll(function(){
