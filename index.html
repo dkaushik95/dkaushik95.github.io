@@ -17,6 +17,11 @@
 
     <!-- Font Awesome CSS -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+
 
     <title>Dishant Kaushik</title>
     <link rel="stylesheet" href="index.css">
@@ -73,17 +78,17 @@
         </div>
       </div>
       <div class="col-lg-6 right col-centered">
-        <h1 class="title">Hi I'm Dishant</h1>
+        <h1 class="title">Hi, I'm Dishant</h1>
         <p>Thank you for visiting my website, here you will find out all the information you need about me. Feel free to contact me.</p>
         <div class="links"><a href="tel:+1-585-957-5675"><i class="fas fa-phone"></i></a></div>
       </div>
     </div>
     <!-- Education -->
-    <h1 style="text-align: center;">Education</h1>
-    <div class="row" id="education">
+    <h1 class="animated fadeIn wow section-heading" id="education">Education</h1>
+    <div class="row education">
       <div class="col-md-6">
-        <div class="card" >
-          <img class="card-img-top" src="images/rit-logo.jpg" alt="Card image cap" style="width: 70%; margin: 5px auto;">
+        <div class="card animated fadeInLeft wow" style="animation-delay: 0.3s;" >
+          <img class="card-img-top" src="images/rit-logo.jpg" alt="Card image cap" style="width: 50%; margin: 5px auto;">
           <div class="card-body">
             <h1 class="card-title">Rochester Institute of Technology</h1>
             <i>Masters of Science in Software Engineering </i>
@@ -112,8 +117,8 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card">
-          <img class="card-img-top" src="images/nmims_logo.jpg" alt="Card image cap" style="width: 50%; margin: 5px auto;">
+        <div class="card animated fadeInLeft wow" style="animation-delay: 0s;">
+          <img class="card-img-top" src="images/nmims_logo.jpg" alt="Card image cap" style="width: 35%; margin: 5px auto;">
           <div class="card-body">
             <h1 class="card-title">NMIMS University</h1>
             <i>Bachelors of Technology in Computer Engineering</i>
@@ -142,16 +147,269 @@
       </div>
     </div>
     <!-- Projects -->
-    <div class="row" id="projects"></div>
+    <h1 class="animated fadeIn wow section-heading" id="projects">Projects</h1>
+    <div class="row">
+      <div class="col-md-3 animated fadeInRight wow" style="animation-delay: 0s;">
+        <div class="card" >
+          <img class="card-img-top" src="images/sam2018.jpg" alt="Card image cap" style="width: 100%; margin: 5px auto;">
+          <div class="card-body">
+            <h1 class="card-title">Research Paper Submission Platform</h1>
+            <ul class="list-group list-group-flush" style="text-align: left;">
+              <li class="list-group-item"> Developed a Web Based Online Paper submission platform, which helped authors to submit papers, committee members to vote and review papers, chairs to assign and perform verdict on the papers and the admins to manage the website.</li>
+              <li class="list-group-item"> Responsibilities include architecture, design, implementation and deployment of the software from the requirements given. </li>
+            </ul>
+          </div>
+          <div class="card-footer text-muted" style="text-align: center;">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTechnology1" aria-expanded="true" aria-controls="collapseOne">
+                Tools & Technologies
+              </button>
+              <a href="https://github.com/dkaushik95/SAM2018" class="btn btn-link">Github</a>
+            </h5>
+            <div id="collapseTechnology1" class="collapse" aria-labelledby="headingOne" data-parent=".card-footer">
+              <div class="card-text">
+                <ul class="list-group list-group-flush" style="text-align: left;">
+                  <li class="list-group-item"><b>Technology used:</b> Ruby on Rails, Haml, Sass, PostgreSQL.</li>
+                  <li class="list-group-item"><b>Tools used:</b> Heroku cloud, GitHub, Lucid Chart, Sublime Text</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animated fadeInRight wow" style="animation-delay: 0.3s;">
+        <div class="card" >
+          <img class="card-img-top" src="images/checkers.jpg" alt="Card image cap" style=" width: 55%; margin: 5px auto;">
+          <div class="card-body">
+            <h1 class="card-title">Web Checkers</h1>
+            <ul class="list-group list-group-flush" style="text-align: left;">
+              <li class="list-group-item"> Developed a Web based online checkers game using an OpenUP approach for software development in a team of 4 students.</li>
+              <li class="list-group-item"> Responsibilities include managing the project, gathering requirement, performing sprint retrospective, development and testing of the software and mentoring team members of the spikes. </li>
+            </ul>
+          </div>
+          <div class="card-footer text-muted" style="text-align: center;">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTechnology2" aria-expanded="true" aria-controls="collapseOne">
+                Tools & Technologies
+              </button>
+              <a href="https://github.com/dkaushik95/2171-swen-610-01-7-teamOreo" class="btn btn-link">Github</a>
+            </h5>
+            <div id="collapseTechnology2" class="collapse" aria-labelledby="headingOne" data-parent=".card-footer">
+              <div class="card-text">
+                <ul class="list-group list-group-flush" style="text-align: left;">
+                  <li class="list-group-item"><b>Technology used:</b> jQuery, Free marker Templating Engine, CSS, Spark Java</li>
+                  <li class="list-group-item"><b>Tools used:</b> GitHub, Trello, Lucid Chart, Slack, JaCoCo Code coverage tool, Mockito mocking tool, Junit for tests</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animated fadeInRight wow" style="animation-delay: 0.5s;">
+        <div class="card" >
+          <img class="card-img-top" src="images/anunciar.png" alt="Card image cap" style=" width: 31%; margin: 5px auto;">
+          <div class="card-body">
+            <h1 class="card-title">Anunciar</h1>
+            <ul class="list-group list-group-flush" style="text-align: left;">
+              <li class="list-group-item"> Developed a better way to send and receive important announcements of my college using an offline first progressive web application which works offline, does background sync, gives notifications and feels like a native application.</li>
+              <li class="list-group-item">Reduced the size of the application by 80% as compared to a native development approach. Also decreased the bandwidth by smartly sending API calls for new data.</li>
+              <li class="list-group-item">Responsibilities included designing the software and the process, development and deployment of the code.</li>
+            </ul>
+          </div>
+          <div class="card-footer text-muted" style="text-align: center;">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTechnology3" aria-expanded="true" aria-controls="collapseOne">
+                Tools & Technologies
+              </button>
+              <a href="https://github.com/Anunciar/anunciar.github.io" class="btn btn-link">Github</a>
+            </h5>
+            <div id="collapseTechnology3" class="collapse" aria-labelledby="headingOne" data-parent=".card-footer">
+              <div class="card-text">
+                <ul class="list-group list-group-flush" style="text-align: left;">
+                  <li class="list-group-item"><b>Technology used:</b> Ruby on Rails, PostgreSQL, ReactJS, HTML, Service worker API, JS with ES2015.</li>
+                  <li class="list-group-item"><b>Tools used:</b> StarUML, Agile with Sprints.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animated fadeInRight wow" style="animation-delay: 0.7s;">
+        <div class="card" >
+          <img class="card-img-top" src="images/otherprojects.png" alt="Card image cap" style=" width: 100%; margin: 5px auto;">
+          <div class="card-body">
+            <h1 class="card-title">Other Projects</h1>
+            <ul class="list-group list-group-flush" style="text-align: left;">
+              <li class="list-group-item"> I have 47 projects and 4 project contributions on Github. Click on the link below to see it all!</li>
+            </ul>
+          </div>
+          <div class="card-footer text-muted" style="text-align: center;">
+            <h5 class="mb-0">
+              <a href="https://github.com/dkaushik95" class="btn btn-link">Github</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Experience -->
-    <div class="row" id="experience"></div>
+    <h1 class="animated fadeIn wow section-heading" id="experience">Experience</h1>
+    <div class="row">
+      <ul class="timeline">
+        <li class="animated fadeInLeft wow">
+          <div class="timeline-badge"><i class="fas fa-flask"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Graduate Assistant</h4>
+              <p>Software Engineering Department at RIT, Rochester NY</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Aug ’17- Present</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Implemented a tool to detect tags of source code of 200 java projects variable names and used different POS tagger to evaluate which tagger works the best in which type of variable name, which will determine an algorithm to increase the accuracy of tagging source code variable names.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted animated fadeInRight wow">
+          <div class="timeline-badge"><i class="fas fa-flask"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Teaching Assistant - Web Engineering</h4>
+              <p>Software Engineering Department at RIT, Rochester NY</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jan ’18- Present</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>TA for Web Engineering, where my role is to formulate a project which involves most of the web technologies used today including OAuth, Offline first, Responsive Design, CORS, Backend support and API implementations.</p>
+            </div>
+          </div>
+        </li>
+        <li class="animated fadeInLeft wow">
+          <div class="timeline-badge"><i class="fas fa-code"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Part-Time Employee - Design & Backend</h4>
+              <p>Collegepond Private Limited, Mumbai</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i>  Mar '17 - Jul '17</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Created Scripts for Generating Posters from Data. My script imports data from Google Sheets and exports them into poster from the Photoshop Script.
+                Designed Templates for various kinds of posters. 
+                Help structure the backend of the Collegepond Application and Created a front-end for the admins to add tests and questions for GRE Quants and Verbal. 
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted animated fadeInRight wow">
+          <div class="timeline-badge"><i class="fas fa-code"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Intern- Core Development Team</h4>
+              <p>UActive Technology Private Limited, Mumbai</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i>  Jun '16 - Jul '16
+              </small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Modeled a landing page for the app with the requirements specification.
+                Programmed the website with HTML, JavaScript and animated it using CSS3.
+                Used Photoshop to customize assets.
+                Optimized the web page for a constant 60fps animations using Page-speed insights 
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="animated fadeInLeft wow">
+          <div class="timeline-badge"><i class="fas fa-code"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Intern- Core Development Team</h4>
+              <p>Zaprest Technologies Private Limited, Delhi</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i>May '16 - Jun '16</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Improved the UI of the website by adding material design patterns, changing the bootstrap properties and adding surfaces to relevant information. 
+                Made the website responsive and made it work for mobile.
+                Created app manifests so that the website can be recognized as an app in mobile devices.
+                Added service worker API for offline functionality, Indexed DB for offline storage, and Polymer for offline app components.
+
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted animated fadeInRight wow">
+          <div class="timeline-badge"><i class="fas fa-code"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Teaching Assistant- Shell Scripting</h4>
+              <p>National Payments Corporation of India (NPCI), Mumbai</p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> May '15 - Jun '15
+
+              </small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Assisted a teacher in training the employees on Linux, an overview and basic of Shell Scripting, file management, system administrator and cron jobs.
+                Facilitated migration from Windows Servers to Linux Servers.
+                Helped in making scripts for the servers of NPCI, which automate security logs, scheduled maintenance and auto shut down of the system after a specific time. It also marks the attendance of the employees working in the office.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- <section id="cd-timeline">
+        <div class="line"></div>
+        <div class="cd-timeline-block-left">
+          <div class="cd-date">
+            Aug'17 - Present
+          </div>
+
+          <div class="cd-timeline-content">
+            <h2>Graduate Assistant</h2>
+            <p><i>Software Engineering Department at RIT, Rochester NY</i></p>
+            <p>Implemented a tool to detect tags of source code of 200 java projects variable names and used different POS tagger to evaluate which tagger works the best in which type of variable name, which will determine an algorithm to increase the accuracy of tagging source code variable names.</p>
+          </div>
+        </div>
+        <div class="cd-timeline-block-right">
+          <div class="cd-date">
+            Aug'17 - Present
+          </div>
+
+          <div class="cd-timeline-content">
+            <h2>Graduate Assistant</h2>
+            <p><i>Software Engineering Department at RIT, Rochester NY</i></p>
+            <p>Implemented a tool to detect tags of source code of 200 java projects variable names and used different POS tagger to evaluate which tagger works the best in which type of variable name, which will determine an algorithm to increase the accuracy of tagging source code variable names.</p>
+          </div>
+        </div>
+        <div class="cd-timeline-block-left">
+          <div class="cd-date">
+            Aug'17 - Present
+          </div>
+
+          <div class="cd-timeline-content">
+            <h2>Graduate Assistant</h2>
+            <p><i>Software Engineering Department at RIT, Rochester NY</i></p>
+            <p>Implemented a tool to detect tags of source code of 200 java projects variable names and used different POS tagger to evaluate which tagger works the best in which type of variable name, which will determine an algorithm to increase the accuracy of tagging source code variable names.</p>
+          </div>
+        </div>
+        <div class="cd-timeline-block-right">
+          <div class="cd-date">
+            Aug'17 - Present
+          </div>
+
+          <div class="cd-timeline-content">
+            <h2>Graduate Assistant</h2>
+            <p><i>Software Engineering Department at RIT, Rochester NY</i></p>
+            <p>Implemented a tool to detect tags of source code of 200 java projects variable names and used different POS tagger to evaluate which tagger works the best in which type of variable name, which will determine an algorithm to increase the accuracy of tagging source code variable names.</p>
+          </div>
+        </div>
+      </section> -->
+    </div>
     <!-- Skills -->
-    <div class="row" id="skills"></div>
+    <h1 class="animated fadeIn wow section-heading" id="skills">Skills</h1>
+    <div class="row"></div>
     <!-- Awards and Achievements -->
-    <div class="row" id="awards"></div>
+    <h1 class="animated fadeIn wow section-heading" id="awards">Awards & Achievements</h1>
+    <div class="row"></div>
     <!-- Extracurricular -->
-    <div class="row" id="skills"></div>
-    
+    <h1 class="animated fadeIn wow section-heading" id="extra">Extracurricular</h1>
+    <div class="row"></div>
+
   </div>
 
   <footer></footer>
@@ -159,10 +417,19 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Pooper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <!-- Wow JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="css/slick/slick.min.js"></script>
   <script>
+    new WOW().init();
+  </script>
+  <script>
+
     $(function(){
       var header = $('nav');
       $(window).scroll(function(){
@@ -171,7 +438,35 @@
         } else {
           header.css('box-shadow', '0px 0px 30px rgba(0, 0, 0, 0.4)'); 
         }
-      });  
+      }); 
+
+      $('.slick-projects').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+        ]
+      });
+
+
     })
   </script>
 
