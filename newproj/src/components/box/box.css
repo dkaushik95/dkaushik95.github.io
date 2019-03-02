@@ -1,0 +1,17 @@
+.box {
+    background: url('https://wallpaperaccess.com/full/2109.jpg') center center no-repeat;
+    color: white;
+    flex: 1;
+    text-align: center;
+    
+}
+  
+  
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bolder;
+}
