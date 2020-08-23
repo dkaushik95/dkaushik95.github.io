@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://picsum.photos/1920/1080);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeIn 2s ease-in-out;
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+  background-origin: border-box;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main {
+  /* width: 80%; */
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 60px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  animation-name: animate;
+  animation-duration: 0.5s;
+  animation-delay: 1.8s;
+  animation-fill-mode: both;
+}
+
+.bolder {
+  font-weight: 400;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.links {
+  margin-top: 20px;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+ul > li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+img {
+  width: 40px;
+  transition: 0.2s all ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.4);
+}
