@@ -6,7 +6,7 @@
   justify-content: center;
   background-image: url(https://picsum.photos/1920/1080);
   background-repeat: no-repeat;
-  background-size: 200;
+  background-size: cover;
   animation: fadeIn 2s ease-in-out;
   --x: 0px;
   --y: 0px;
@@ -44,11 +44,11 @@
 @keyframes animate {
   0% {
     opacity: 0;
-    margin: -50px auto;
+    transform: translateY(-200px);
   }
   100% {
     opacity: 1;
-    margin: 0 auto;
+    transform: translateY(0px);
   }
 }
 
